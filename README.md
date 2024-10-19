@@ -12,12 +12,9 @@ make a mod that is just for fun.
 
 - Hammer!\
   To use it, right-click it to mine all blocks in a 6x6x6 area.\
+- Doritos!\
+  A food item that gives you regeneration II for 10 seconds.\
 
 ## Recipes
 I recommend seeing the recipes in the modrinth page.\
-I will add them here later.
-
-- Hammer
-    - 3 Iron Blocks
-    - 2 Sticks\
-      Craft it like a pickaxe.
+I will add the link to the modrinth page soon.

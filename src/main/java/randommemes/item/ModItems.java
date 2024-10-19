@@ -12,9 +12,14 @@ import randommemes.item.hammer.Hammer;
 
 public class ModItems {
 	public static final Item HAMMER = register("hammer", new Hammer());
+	public static final Item DORITOS = register("doritos", new Doritos());
 
 	private static void addItemsToToolsTab(FabricItemGroupEntries entries) {
 		entries.add(HAMMER);
+	}
+
+	private static void addItemsToFoodTab(FabricItemGroupEntries entries) {
+		entries.add(DORITOS);
 	}
 
 	private static Item register(String name, Item item) {
@@ -26,5 +31,6 @@ public class ModItems {
 	public static void init() {
 		// Register items here
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsTab);
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodTab);
 	}
 }
