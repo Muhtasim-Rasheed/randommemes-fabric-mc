@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import randommemes.item.ModItems;
 
 public class RandomMemes implements ModInitializer {
 	public static final String MOD_ID = "randommemes";
@@ -20,5 +21,7 @@ public class RandomMemes implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+		ModItems.init();
 	}
 }

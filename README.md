@@ -10,9 +10,14 @@ make a mod that is just for fun.
 
 ## Adds...
 
-- Nothing yet!
-- I said nothing yet!
+- Hammer!\
+  To use it, right-click it to mine all blocks in a 6x6x6 area.\
 
 ## Recipes
+I recommend seeing the recipes in the modrinth page.\
+I will add them here later.
 
-- Work in progress (WIP).
+- Hammer
+    - 3 Iron Blocks
+    - 2 Sticks\
+      Craft it like a pickaxe.

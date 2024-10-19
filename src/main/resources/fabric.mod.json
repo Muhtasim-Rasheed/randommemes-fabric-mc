@@ -3,13 +3,12 @@
 	"id": "randommemes",
 	"version": "${version}",
 	"name": "RandomMemes",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Extremely funny items!",
 	"authors": [
-		"Me!"
+		"Mutasimos"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Muhtasim-Rasheed/randommemes-fabric-mc"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/randommemes/icon.png",
