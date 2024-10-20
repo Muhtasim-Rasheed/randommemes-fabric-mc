@@ -10,5 +10,9 @@
     {
       "item": "minecraft:sugar"
     }
-  ]
+  ],
+  "result": {
+    "id": "randommemes:gatorade",
+    "count": 1
+  }
 }

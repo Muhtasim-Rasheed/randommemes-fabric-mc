@@ -14,6 +14,10 @@ make a mod that is just for fun.
   To use it, right-click it to mine all blocks in a 6x6x6 area.\
 - Doritos!\
   A food item that gives you regeneration II for 10 seconds.\
+- Gatorade!\
+  A drink item that gives you speed II for 10 seconds.\
+- Firey Wand!\
+  A wand that places fire wherever you right-click.\
 
 ## Recipes
 I recommend seeing the recipes in the modrinth page.\
