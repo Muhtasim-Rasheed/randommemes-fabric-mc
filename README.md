@@ -18,6 +18,8 @@ make a mod that is just for fun.
   A drink item that gives you speed II for 10 seconds.
 - Firey Wand!\
   A wand that places fire wherever you right-click.
+- /randommemes\
+  A command that can do anything.
 
 ## Recipes
 I recommend seeing the recipes in the modrinth page.\
