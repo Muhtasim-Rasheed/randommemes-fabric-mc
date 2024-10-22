@@ -18,6 +18,8 @@ make a mod that is just for fun.
   A drink item that gives you speed II for 10 seconds.
 - Firey Wand!\
   A wand that places fire wherever you right-click.
+- Propeller Hat!\
+  A hat that gives you fly hacks.
 - /randommemes\
   A command that can do anything.
 
