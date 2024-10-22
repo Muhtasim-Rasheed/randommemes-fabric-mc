@@ -23,6 +23,5 @@ make a mod that is just for fun.
 - /randommemes\
   A command that can do anything.
 
-## Recipes
-I recommend seeing the recipes in the modrinth page.\
-I will add the link to the modrinth page soon.
+## Modrinth Link
+[Here](https://modrinth.com/mod/randommemes)
