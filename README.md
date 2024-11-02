@@ -20,6 +20,10 @@ make a mod that is just for fun.
   A wand that places fire wherever you right-click.
 - Propeller Hat!\
   A hat that gives you fly hacks.
+- Slippers!\
+  A pair of slippers, when you hit a mob with them, it will\
+  be knocked back with knock back 55. Cannot be crafted as it\
+  is too powerful.
 - /randommemes\
   A command that can do anything.
 

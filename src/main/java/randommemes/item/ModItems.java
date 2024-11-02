@@ -19,6 +19,7 @@ public class ModItems {
 	public static final Item DORITOS = register("doritos", new Doritos());
 	public static final Item GATORADE = register("gatorade", new Gatorade());
 	public static final Item FIREY_WAND = register("firey_wand", new FireyWand());
+	public static final Item SLIPPER = register("slipper", new Slipper());
 
 	public static final Item PROPELLER_HAT = register("propeller_hat", new PropellerHat(ModArmorMaterials.PROPELLER_HAT, ArmorItem.Type.HELMET, new Item.Settings()));
 
@@ -34,6 +35,7 @@ public class ModItems {
 
 	private static void addItemsToCombatTab(FabricItemGroupEntries entries) {
 		entries.add(PROPELLER_HAT);
+		entries.add(SLIPPER);
 	}
 
 	private static Item register(String name, Item item) {

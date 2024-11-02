@@ -23,6 +23,9 @@ public class PropellerHat extends ArmorItem {
 
 				player.getAbilities().allowFlying = true;
 				player.getAbilities().flying = true;
+			} else {
+				player.getAbilities().allowFlying = false;
+				player.getAbilities().flying = false;
 			}
 		}
 
