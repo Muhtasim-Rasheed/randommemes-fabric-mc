@@ -7,13 +7,14 @@ import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
 public class Hammer extends ToolItem {
-	public Hammer() {
-		super(new HammerMaterial(), new Settings());
+	public Hammer(ToolMaterial material, Settings settings) {
+		super(material, settings);
 	}
 
 	@Override

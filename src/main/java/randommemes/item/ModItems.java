@@ -2,9 +2,13 @@ package randommemes.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -12,14 +16,36 @@ import randommemes.RandomMemes;
 import randommemes.armor.ModArmorMaterials;
 import randommemes.armor.PropellerHat;
 import randommemes.item.fireywand.FireyWand;
+import randommemes.item.fireywand.FireyWandMaterial;
 import randommemes.item.hammer.Hammer;
+import randommemes.item.hammer.HammerMaterial;
 
 public class ModItems {
-	public static final Item HAMMER = register("hammer", new Hammer());
-	public static final Item DORITOS = register("doritos", new Doritos());
-	public static final Item GATORADE = register("gatorade", new Gatorade());
-	public static final Item FIREY_WAND = register("firey_wand", new FireyWand());
-	public static final Item SLIPPER = register("slipper", new Slipper());
+	public static final Item HAMMER = register("hammer", new Hammer(new HammerMaterial(), new Item.Settings()));
+	public static final Item DORITOS = register("doritos", new Item(new Item.Settings().food(
+					new FoodComponent.Builder()
+									.snack()
+									.statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20 * 10, 2), 1.0F)
+									.nutrition(6)
+									.saturationModifier(0.6F)
+									.build()
+	)));
+	public static final Item GATORADE = register("gatorade", new Item(new Item.Settings().food(
+					new FoodComponent.Builder()
+									.nutrition(6)
+									.saturationModifier(0.6f)
+									.statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20 * 10, 2), 1.0f)
+									.usingConvertsTo(Items.GLASS_BOTTLE)
+									.build()
+	)));
+	public static final Item FIREY_WAND = register("firey_wand", new FireyWand(new FireyWandMaterial(), new Item.Settings().maxCount(1)));
+	public static final Item SLIPPER = register("slipper", new Slipper(new Item.Settings()));
+
+	public static final Item ASBESTOS_INGOT = register("asbestos_ingot", new Item(new Item.Settings().food(
+					new FoodComponent.Builder()
+									.statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20 * 30, 2), 1.0F)
+									.build()
+	)));
 
 	public static final Item PROPELLER_HAT = register("propeller_hat", new PropellerHat(ModArmorMaterials.PROPELLER_HAT, ArmorItem.Type.HELMET, new Item.Settings()));
 
@@ -38,6 +64,10 @@ public class ModItems {
 		entries.add(SLIPPER);
 	}
 
+	private static void addItemsToIngredientsTab(FabricItemGroupEntries entries) {
+		entries.add(ASBESTOS_INGOT);
+	}
+
 	private static Item register(String name, Item item) {
 		Identifier id = Identifier.of(RandomMemes.MOD_ID, name);
 
@@ -49,5 +79,6 @@ public class ModItems {
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsTab);
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodTab);
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatTab);
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientsTab);
 	}
 }

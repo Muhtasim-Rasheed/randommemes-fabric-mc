@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "---",
+    "---",
+    "---"
+  ],
+  "key": {
+    "-": {
+      "item": "randommemes:asbestos_ingot"
+    }
+  },
+  "result": {
+    "id": "randommemes:asbestos_block",
+    "count": 1
+  }
+}

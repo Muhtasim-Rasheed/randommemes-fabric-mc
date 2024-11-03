@@ -5,8 +5,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class Slipper extends Item {
-	public Slipper() {
-		super(new Item.Settings());
+	public Slipper(Settings settings) {
+		super(settings);
 	}
 
 	// Knock back 55 on hit

@@ -24,6 +24,9 @@ make a mod that is just for fun.
   A pair of slippers, when you hit a mob with them, it will\
   be knocked back with knock back 55. Cannot be crafted as it\
   is too powerful.
+- Asbestos ingot and block!\
+  The ingot can be eaten, but it will give you poison II for 30 seconds. Can be found in mineshafts and dungeons.\
+  The block gives you poison I if it is raining.
 - /randommemes\
   A command that can do anything.
 

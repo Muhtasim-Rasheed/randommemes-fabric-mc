@@ -6,7 +6,9 @@ import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import randommemes.armor.ModArmorMaterials;
+import randommemes.block.ModBlocks;
 import randommemes.commands.ModCommands;
+import randommemes.datagen.ModLootTables;
 import randommemes.item.ModItems;
 
 public class RandomMemes implements ModInitializer {
@@ -26,9 +28,11 @@ public class RandomMemes implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		ModItems.init();
+		ModBlocks.init();
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
 			ModCommands.init(dispatcher);
 		});
 		ModArmorMaterials.init();
+		ModLootTables.init();
 	}
 }

@@ -4,14 +4,15 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.world.World;
 
 public class FireyWand extends ToolItem {
-	public FireyWand() {
-		super(new FireyWandMaterial(), new Settings().maxCount(1));
+	public FireyWand(ToolMaterial material, Settings settings) {
+		super(material, settings);
 	}
 
 	@Override
