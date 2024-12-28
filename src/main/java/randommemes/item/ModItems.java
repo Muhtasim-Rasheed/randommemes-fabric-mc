@@ -2,6 +2,7 @@ package randommemes.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.jukebox.JukeboxSongs;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -12,6 +13,7 @@ import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import randommemes.RandomMemes;
 import randommemes.armor.ModArmorMaterials;
 import randommemes.armor.PropellerHat;
@@ -19,6 +21,7 @@ import randommemes.item.fireywand.FireyWand;
 import randommemes.item.fireywand.FireyWandMaterial;
 import randommemes.item.hammer.Hammer;
 import randommemes.item.hammer.HammerMaterial;
+import randommemes.sound.ModSounds;
 
 public class ModItems {
 	public static final Item HAMMER = register("hammer", new Hammer(new HammerMaterial(), new Item.Settings()));
@@ -47,11 +50,16 @@ public class ModItems {
 									.build()
 	)));
 
+	public static final Item MUSIC_DISC_PORTAL_RADIO = register("music_disc_portal_radio", new Item((new Item.Settings()).maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModSounds.PORTAL_RADIO_KEY)));
+	public static final Item MUSIC_DISC_FUNKY_TOWN = register("music_disc_funky_town", new Item((new Item.Settings()).maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModSounds.FUNKY_TOWN_KEY)));
+
 	public static final Item PROPELLER_HAT = register("propeller_hat", new PropellerHat(ModArmorMaterials.PROPELLER_HAT, ArmorItem.Type.HELMET, new Item.Settings()));
 
 	private static void addItemsToToolsTab(FabricItemGroupEntries entries) {
 		entries.add(HAMMER);
 		entries.add(FIREY_WAND);
+		entries.add(MUSIC_DISC_PORTAL_RADIO);
+		entries.add(MUSIC_DISC_FUNKY_TOWN);
 	}
 
 	private static void addItemsToFoodTab(FabricItemGroupEntries entries) {

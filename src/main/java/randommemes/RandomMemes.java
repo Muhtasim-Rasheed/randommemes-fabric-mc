@@ -10,6 +10,7 @@ import randommemes.block.ModBlocks;
 import randommemes.commands.ModCommands;
 import randommemes.datagen.ModLootTables;
 import randommemes.item.ModItems;
+import randommemes.sound.ModSounds;
 
 public class RandomMemes implements ModInitializer {
 	public static final String MOD_ID = "randommemes";
@@ -34,5 +35,6 @@ public class RandomMemes implements ModInitializer {
 		});
 		ModArmorMaterials.init();
 		ModLootTables.init();
+		ModSounds.init();
 	}
 }

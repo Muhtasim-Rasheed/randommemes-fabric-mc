@@ -27,6 +27,8 @@ make a mod that is just for fun.
 - Asbestos ingot and block!\
   The ingot can be eaten, but it will give you poison II for 30 seconds. Can be found in mineshafts and dungeons.\
   The block gives you poison I if it is raining.
+- TWO music discs "Portal Radio" and "Funky Town"!\
+  You should listen to it.
 - /randommemes\
   A command that can do anything.
 

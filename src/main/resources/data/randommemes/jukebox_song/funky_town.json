@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.randommemes.music_disc_funky_town.desc"
+  },
+  "length_in_seconds": 227.18,
+  "sound_event": "randommemes:funky_town"
+}

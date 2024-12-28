@@ -6,5 +6,9 @@
   "item.randommemes.propeller_hat": "Propeller Hat",
   "item.randommemes.slipper": "Slippers",
   "item.randommemes.asbestos_ingot": "Asbestos Ingot",
+  "item.randommemes.music_disc_portal_radio": "Music Disc",
+  "item.randommemes.music_disc_portal_radio.desc": "Portal - Portal Radio (Still Alive)",
+  "item.randommemes.music_disc_funky_town": "Music Disc",
+  "item.randommemes.music_disc_funky_town.desc": "Lipps Inc. - Funky Town",
   "block.randommemes.asbestos_block": "Block of Asbestos"
 }

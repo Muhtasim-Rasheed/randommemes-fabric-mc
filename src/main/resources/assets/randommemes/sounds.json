@@ -1,0 +1,18 @@
+{
+  "portal_radio": {
+    "sounds": [
+      {
+        "name": "randommemes:portal_radio",
+        "stream": true
+      }
+    ]
+  },
+  "funky_town": {
+    "sounds": [
+      {
+        "name": "randommemes:funky_town",
+        "stream": true
+      }
+    ]
+  }
+}
